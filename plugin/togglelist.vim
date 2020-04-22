@@ -67,7 +67,7 @@ function! ToggleQuickfixList()
   if exists("g:toggle_list_copen_command")
     exec(g:toggle_list_copen_command)
   else
-    copen
+    :vertical botright copen 120
   endif
   if winnr() != winnr
     wincmd p
